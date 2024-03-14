@@ -11,6 +11,18 @@ const NavBar = ({ user }) => {
           <li><a href="/dashboard">Dashboard</a></li>
           
           <li><a href="/model">Model</a></li>
+          {user && (
+            <React.Fragment>
+              <li><a href="/me">Hi {user.username}</a></li>
+              <li><a href="/users/logout">LogOut</a></li>
+            </React.Fragment>
+          )}
+          {!user && (
+            <React.Fragment>
+              <li><a href="/users/login">Login</a></li>
+              <li><a href="/users/register">Register</a></li>
+            </React.Fragment>
+          )}
       </ul>
 	  </header> 
 
