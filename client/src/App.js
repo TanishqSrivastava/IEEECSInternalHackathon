@@ -15,6 +15,7 @@ import Register from "./components/register";
 import NavBar from "./components/navbar";
 import ProtectedRoute from "./components/common/protectedRoute";
 import PostPage from "./components/PostPage";
+import Model from "./components/Model.jsx";
 
 class App extends Component {
   state = {};
@@ -45,6 +46,7 @@ class App extends Component {
             path="/new-post"
             render={(props) => <NewPost {...props} user={this.state.user} />}
           />
+          <Route path="/model" component={Model} />
           <Route
             path="/post/:id"
             render={(props) => <PostPage {...props} user={this.state.user} />}

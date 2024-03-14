@@ -12,7 +12,7 @@ const replies = require("./routes/replies");
 const app = express();
 
 
-let mongoDBURL = "mongodb+srv://tanishqsrivastava2022:anoop123@cluster0.vcpxjxf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+let mongoDBURL = "mongodb+srv://NotYashu:anoop123@cluster0.sjlr1hy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(mongoDBURL, {
@@ -27,7 +27,9 @@ mongoose
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 app.get("/", (req, res) => {
   res.send("request successfully sent!");
