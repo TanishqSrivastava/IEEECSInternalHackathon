@@ -2,7 +2,7 @@
 
 A website mainly built to help farmers for any agricultural needs
 
-<img src="images/post1.png">
+
 
 ## Features
 
