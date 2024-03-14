@@ -1,14 +1,13 @@
-# Discussion Forum
+# AgroCare
 
-A disscussion forum built using ReactJS, NodeJS and MongoDB.
+A website mainly built to help farmers for any agricultural needs
 
 <img src="images/post1.png">
 
 ## Features
 
-- Allows users to create new discussions about different topics and assign tags to them. Other users can reply to those posts, like them, etc.
-- Each discussion is assigned to different tags and user can filter posts according to the topics they like, or by popularity.
-- Performed User Authentication and Authorisation using JSON Web Tokens.
+-A forum where farmers can post questions and others can answer
+-A page where farmers can post a photo of a plant and the page will show how healthy the plant is
 
 
 ## Installation - 
