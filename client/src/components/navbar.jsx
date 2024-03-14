@@ -3,6 +3,21 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = ({ user }) => {
   return (
+    <>
+    	<header className="header">
+		  <h1 className="logo"><a href="/">AgroCare</a></h1>
+      <ul className="main-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          
+          <li><a href="/model">Model</a></li>
+      </ul>
+	  </header> 
+
+    </>
+  )
+  /*
+  return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top ">
       <NavLink className="navbar-brand" to="/">
         Community
@@ -65,6 +80,7 @@ const NavBar = ({ user }) => {
       </div>
     </nav>
   );
+  */
 };
 
 export default NavBar;
